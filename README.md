@@ -62,6 +62,15 @@ python scripts/scan.py /path/to/media --json > issues.json
 
 Your media directory should contain `电影/` and/or `剧集/` subdirectories.
 
+## Related: ZSpace NAS users
+
+If you use a [ZSpace (极空间)](https://www.zspace.cn/) NAS, pair this guide with **[zspace-cli](https://github.com/skyzhao1223/zspace-cli)** — a CLI / SDK / MCP Server that talks to your NAS without SSH. It includes a [`skills/media-manager`](https://github.com/skyzhao1223/zspace-cli/tree/main/skills/media-manager) Cursor skill that applies these naming conventions over the ZSpace API.
+
+| Repo | Role |
+|------|------|
+| **media-naming-guide** (this repo) | Naming conventions — works with any storage |
+| **[zspace-cli](https://github.com/skyzhao1223/zspace-cli)** | ZSpace file operations + media-manager skill |
+
 ---
 
 ## 功能
@@ -99,6 +108,15 @@ python scripts/scan.py /path/to/media
 ```
 
 扫描器递归验证每个文件/目录是否符合命名规范，按问题类型分组输出。媒体目录下应包含 `电影/` 和/或 `剧集/` 子目录。
+
+### 极空间用户配套工具
+
+如果你用的是 [极空间 NAS](https://www.zspace.cn/)，可以配合 **[zspace-cli](https://github.com/skyzhao1223/zspace-cli)** 使用——无需 SSH，通过 CLI / Python SDK / MCP Server 直接操作 NAS。内置 [`skills/media-manager`](https://github.com/skyzhao1223/zspace-cli/tree/main/skills/media-manager) Cursor Skill，会按本仓库的命名规范通过极空间 API 整理影视库。
+
+| 仓库 | 定位 |
+|------|------|
+| **media-naming-guide**（本仓库） | 通用命名规范，适用任意存储 |
+| **[zspace-cli](https://github.com/skyzhao1223/zspace-cli)** | 极空间文件操作 + 影视整理 skill |
 
 ## License
 
